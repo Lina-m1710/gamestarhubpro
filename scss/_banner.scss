@@ -1,0 +1,115 @@
+.banner {
+    background-image: url(../images/banner-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 113px 0 123px;
+
+    @media screen and(max-width:768px) {
+        padding: 137px 0 115px;
+    }
+}
+
+.banner-text {
+    max-width: 592px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and(max-width:768px) {
+        max-width: 328px;
+    }
+}
+
+
+.banner-logo {
+    @media screen and(max-width:768px) {
+        max-width: 265.27px;
+    }
+}
+
+.banner-text h1 {
+    margin: 12px auto 29px;
+    max-width: 481px;
+
+    @media screen and(max-width:768px) {
+        margin: 31px auto 34px;
+    }
+}
+
+.banner-text p {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto 32px;
+    color: #ffffff;
+    max-width: 569px;
+
+}
+
+.banner-btns {
+    max-width: 499px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media screen and(max-width:768px) {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 17px;
+    }
+}
+
+.btn-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46.89%;
+    height: 59px;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 94, 1) 0%,
+            rgba(0, 251, 255, 1) 100%);
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    @media screen and(max-width:768px) {
+        max-width: 234px;
+        width: 100%;
+    }
+}
+
+.btn-link::before {
+    content: "";
+    position: absolute;
+    width: 99.14%;
+    height: 96.61%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(0deg,
+            rgba(0, 0, 94, 1) 0%,
+            rgba(0, 251, 255, 1) 100%);
+    border-radius: 20px;
+}
+.more::before{
+    background: linear-gradient(
+        0deg,
+        rgba(0, 251, 255, 1) 0%,
+        rgba(0, 0, 94, 1) 100%
+      );
+}
+.btn-link:hover {
+    filter: drop-shadow(0 0 10px rgba(0, 251, 255, 1));
+}
+.btn-link span{
+    position: relative;
+}
